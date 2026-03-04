@@ -10,28 +10,36 @@
 
     <div class="navbar">
         <a href=" {{ url_for('index') }} " class="navbar-brand"> Home </a>
-        <a href=" {{ url_for('artists') }}" class="navbar-items"> Artists </a>
+        <a href="#" class="navbar-items"> Artists </a>
     </div>
 
     <div class="page-content">
 
-        <h1>Genre Library</h1>
+        <h1>Paige's Music Library</h1>
         
-        {% if name %}
-        <p>Hello, {{ name }}!</p>
+        <h2> Genre List </h2>
+        
+        <div>
 
-        {% else %}
-        <p>Hello, visitor!</p>
+            <dl>
+            <h2> My Favorite Genres:</h2>
+            
+            {% for item in genres %}
+            <li> 
+                <h3> {{ item }} </h3>
+            </li>
+            {% endfor %}
+            </dl>
 
-        {% endif %}
+        </div>
 
     </div>
 
 
 
     <footer>
-            <span>Created by Paige &copy; 2026</span>
-        </footer>
+        <span>Created by Paige &copy; 2026</span>
+    </footer>
 
 </body>
 

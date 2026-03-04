@@ -9,9 +9,11 @@ app = Flask(__name__)
 @app.route("/")
 def index(): 
     # Pass variables from Python to HTML
+    genres_list = ['Indie', 'Pop', 'Hip Hop', 'Soul', 'R&B', 'Latin', 'Jazz']
 
-    return render_template("index.html")
+    return render_template("index.html", genres=genres_list)
 
 
+    
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
