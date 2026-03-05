@@ -21,15 +21,19 @@
         
         <div>
 
-            <dl>
+            <ul>
             <h2> My Favorite Genres:</h2>
             
-            {% for item in genres %}
-            <li> 
-                <h3> {{ item }} </h3>
+            {% for key, value in genres.items() %}
+            <li class="genre-item">
+                <a href="{{ url_for('value') }}" 
+                   class="button">
+                    {{ key }}
+                </a>
             </li>
             {% endfor %}
-            </dl>
+
+            </ul>
 
         </div>
 
