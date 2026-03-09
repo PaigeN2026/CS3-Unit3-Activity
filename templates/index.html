@@ -10,7 +10,6 @@
 
     <div class="navbar">
         <a href=" {{ url_for('index') }} " class="navbar-brand"> Home </a>
-        <a href="#" class="navbar-items"> Artists </a>
     </div>
 
     <div class="page-content">
@@ -19,21 +18,24 @@
         
         <h2> Genre List </h2>
         
-        <div>
+        <div id="genrelist">
 
-            <ul>
-            <h2> My Favorite Genres:</h2>
-            
-            {% for key, value in genres.items() %}
-            <li class="genre-item">
-                <a href="{{ url_for('value') }}" 
-                   class="button">
-                    {{ key }}
-                </a>
-            </li>
-            {% endfor %}
+            <form action="/submit" method="POST">
+                <label for="genres"> Select </label>
+                <select id="genres" name="genres" required>
+                    <option value="INDIE"> Indie </option>
+                    <option value="POP"> Pop </option>
+                    <option value="HIPHOP"> Hip Hop </option>
+                    <option value="SOUL"> Soul </option>
+                    <option value="RNB"> R&B </option>
+                    <option value="LATIN"> Latin </option>
+                    <option value="JAZZ"> Jazz </option>
+                </select>
 
-            </ul>
+                <br>
+
+                <button type="submit">Submit</button>
+            </form>
 
         </div>
 
