@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
 :root {
     --accent: rgb(29, 29, 31);
 }
@@ -10,6 +13,10 @@
 body {
     background-color: var(--accent);
     color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -30,4 +37,32 @@ h2 {
 
 footer {
     text-align: center;
+}
+
+/* Indie.HTML */
+#indie-body {
+    background: radial-gradient(rgb(234, 55, 26) 0%, rgb(223, 93, 16) 25%, rgb(213, 142, 27) 50%, rgb(107, 145, 84) 75%, rgb(83, 159, 146) 100%);
+}
+
+#indie-navbar-bod {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#indie-navbar {
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 25px;
+    color: white;
+
+}
+
+#indie-h1 {
+    font-family: Indie Flower;
+    margin-bottom: -2px;
+    text-shadow: -1px 5px 12px rgba(235, 235, 235, 0.4);
+}
+
+#indie-p {
+    margin-top: -25px; 
 }

@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
-<body>
+<body id="indie-body">
 
-    <div class="navbar">
-        <a href=" {{ url_for('index') }} " class="navbar-brand"> Home </a>
+    <div class="navbar" id="indie-navbar-bod">
+        <a href=" {{ url_for('index') }} " class="navbar-brand" id="indie-navbar"> ← home </a>
     </div>
 
     <div class="page-content">
-
-        <h1> Hi </h1>
+            <h1 id="indie-h1" style="font-size: 60px;">Indie</h1>
+            <p id="indie-p">Indie (independent) music is a genre and ethos defined by artists producing music independently of major commercial record labels, prioritizing artistic freedom and a DIY (do-it-yourself) approach. Originally referring to production, it now commonly denotes a guitar-heavy or lo-fi sound, spanning subgenres like indie rock, indie-pop, and indie folk.</p>
+            <hr>
 
     </div>
 
